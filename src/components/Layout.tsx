@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Outlet, Link } from 'react-router-dom';
-import { MessageCircle, ShoppingBag, LayoutDashboard, Home, Info, Mail } from 'lucide-react';
+import { MessageCircle, ShoppingBag, LayoutDashboard, Home, Info, Mail, Gamepad2 } from 'lucide-react';
 import Header from './Header';
 import ChatBot from './ChatBot';
 import { useAuth } from '../contexts/AuthContext'; // <-- to check if logged in
@@ -142,6 +142,13 @@ const Layout: React.FC = () => {
         {/* Icons (visible only when expanded) */}
         {isSidebarOpen && (
           <div className="flex flex-col gap-3 animate-fade-in-up">
+            <Link
+              to="/arcade"
+              className="w-12 h-12 sm:w-14 sm:h-14 bg-gradient-to-br from-yellow-500 to-white text-white rounded-full shadow-lg hover:scale-110 transition-all flex items-center justify-center hover-lift"
+              title="Innovation Arcade"
+            >
+              <Gamepad2 className="w-5 h-5 sm:w-6 sm:h-6 text-black" />
+            </Link>
             <Link
               to="/marketplace"
               className="w-12 h-12 sm:w-14 sm:h-14 bg-gradient-to-br from-yellow-500 to-white text-white rounded-full shadow-lg hover:scale-110 transition-all flex items-center justify-center hover-lift"

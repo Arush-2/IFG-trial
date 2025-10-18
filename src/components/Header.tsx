@@ -53,6 +53,9 @@ const Header: React.FC = () => {
               <Link to="/about" className="text-gray-700 hover:text-blue-600 font-medium transition-colors hover-scale">About</Link>
               <Link to="/benefits" className="text-gray-700 hover:text-blue-600 font-medium transition-colors hover-scale">Benefits</Link>
               <Link to="/contact" className="text-gray-700 hover:text-blue-600 font-medium transition-colors hover-scale">Contact</Link>
+              <Link to="/arcade" className="text-gray-700 hover:text-yellow-600 font-medium transition-colors hover-scale">
+                Innovation Arcade
+              </Link>
               <Link to="/marketplace" className="text-gray-700 hover:text-purple-600 font-medium transition-colors hover-scale">
                 Marketplace
               </Link>
@@ -113,6 +116,13 @@ const Header: React.FC = () => {
               <Link to="/about" className="block px-3 py-2 text-gray-700" onClick={() => setIsMenuOpen(false)}>About</Link>
               <Link to="/benefits" className="block px-3 py-2 text-gray-700" onClick={() => setIsMenuOpen(false)}>Benefits</Link>
               <Link to="/contact" className="block px-3 py-2 text-gray-700" onClick={() => setIsMenuOpen(false)}>Contact</Link>
+              <Link
+                to="/arcade"
+                className="block px-3 py-2 text-gray-700"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Innovation Arcade
+              </Link>
               <Link
                 to="/marketplace"
                 className="block px-3 py-2 text-gray-700"
